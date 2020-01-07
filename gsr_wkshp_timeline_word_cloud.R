@@ -116,15 +116,6 @@ d <- data.frame( word = names( v ), freq = v )
 ##  GENERATE THE WORD CLOUD
 
 
-wordcloud( words = d$word,
-           freq = d$freq,
-           scale = c( 4, 0.4 ),
-           min.freq = 2,
-           max.words = 250,
-           random.order = FALSE,
-           rot.per = 0.25,
-           colors = brewer.pal( 8, "Dark2" ) )
-
 #  Regarding the stemmed version...the 'stemDocument' function
 #  leads to strange results, like 'earli' for 'early' and 
 #  'earlier'. Thus, it is not used in this case.
